@@ -1,0 +1,37 @@
+.home-container {
+    background: linear-gradient(to bottom right, #ffe5dc, #ffcfd2);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  
+  .home-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .pop-in-message {
+    font-size: 1.2rem;
+    color: #444;
+    background-color: white;
+    padding: 16px 24px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    animation: popIn 0.8s ease-out forwards;
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  
+  /* Animation keyframes */
+  @keyframes popIn {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
